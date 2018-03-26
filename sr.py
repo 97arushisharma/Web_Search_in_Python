@@ -3,7 +3,10 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
 from googlesearch import search
 import urllib , webbrowser
+<<<<<<< HEAD
 from bs4 import BeautifulSoup
+=======
+>>>>>>> 08a411ce2670840db4db17d5423c5e817ed046d0
 #import re 
  
 # get audio from the microphone                                                                       
@@ -29,6 +32,7 @@ print(filtered_sent)
  
 #page = urllib.request.urlopen("http://google.com").read()
 
+<<<<<<< HEAD
 
 #for x in filtered_sent:
 #	for j in search(x, tld='com', lang='en', num=1, stop=1, pause=2):
@@ -60,6 +64,15 @@ for j in search(a1, tld='com', lang='en', num=1, stop=1, pause=2):
 # parse the html using beautiful soup and store in variable `soup`
 
 
+=======
+# => via regular expression
+
+for x in filtered_sent:
+	for j in search(x, tld='com', lang='en', num=1, stop=1, pause=2):
+		usock=urllib.request.urlopen(j)
+		webbrowser.open(j)
+		
+>>>>>>> 08a411ce2670840db4db17d5423c5e817ed046d0
 
 #print(page.find(x.encode()))
 
