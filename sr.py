@@ -11,7 +11,7 @@ r = sr.Recognizer()
 with sr.Microphone() as source:                                                                       
     print("Speak:")                                                                                   
     audio = r.listen(source) 
-a1=r.recognize_google(audio); 
+a1=r.recognize_google(audio) 
 
 stop_words=set(stopwords.words("english"))
 words= word_tokenize(a1);
